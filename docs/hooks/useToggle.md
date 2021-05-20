@@ -1,5 +1,6 @@
 ---
 title: useToggle
+order: 1
 nav:
   title: hooks
   path: /hooks

@@ -1,5 +1,6 @@
 ---
 title: useSetState
+order: 2
 nav:
   title: hooks
   path: /hooks
