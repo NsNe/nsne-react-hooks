@@ -1,2 +1,10 @@
-export { default as useBoolean } from './useBoolean';
-export { default as useToggle } from './useBoolean';
+import useBoolean from './useBoolean';
+import useToggle from './useBoolean';
+import useSetState from './useSetState';
+
+export {
+  useBoolean,
+  useToggle,
+  useSetState,
+
+}
