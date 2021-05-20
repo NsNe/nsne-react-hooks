@@ -1,6 +1,8 @@
+import { defineConfig } from "dumi";
+
 const pkg = require('./package.json');
 
-export default {
+export default defineConfig({
   mode: 'site',
   title: 'nsne react hooks',
   dynamicImport: {},
@@ -9,5 +11,17 @@ export default {
   navs: [null, { title: 'GitHub', path: 'https://github.com/NsNe/nsne-react-hooks' }],
   publicPath: `/${pkg.name}/`,
   base: `/${pkg.name}/`,
-    // more config: https://d.umijs.org/config
-};
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ]
+
+  // more config: https://d.umijs.org/config
+});
+
